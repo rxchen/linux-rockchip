@@ -58,6 +58,12 @@
 	pinctrl-0 = <&uart1m0_xfer &uart1m0_ctsn>;
 };
 
+&uart2 {
+        status = "okay";
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart2m0_xfer>;
+};
+
 &sdmmc1 {
 	supports-sdio;
 	bus-width = <4>;
